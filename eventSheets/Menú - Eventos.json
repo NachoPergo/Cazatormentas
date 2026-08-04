@@ -1,0 +1,1110 @@
+{
+	"name": "Menú - Eventos",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "PopUpActivo",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 382731103375646
+		},
+		{
+			"eventType": "variable",
+			"name": "Dificultad",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 489083276335242
+		},
+		{
+			"eventType": "variable",
+			"name": "MusicaOnOff",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 957841833451136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 836953935589558
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 103382801258402,
+					"parameters": {
+						"audio-file": {
+							"path": "montogoronto-short-percussive-orchestral-tension-v02-481586"
+						},
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"mm\""
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnCazatormentas",
+					"sid": 487222823658058,
+					"parameters": {
+						"color": "rgbEx(50, 205, 50)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnGranjero",
+					"sid": 885016813145880,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnPsicópata",
+					"sid": 688348373584283,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 623463934662992,
+					"parameters": {
+						"layer": "\"PDO\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 495114948381275,
+					"parameters": {
+						"variable": "Dificultad",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto",
+					"sid": 770621762189368,
+					"parameters": {
+						"text": "\"2\""
+					}
+				},
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 933296775413949,
+					"parameters": {
+						"width": "500",
+						"height": "910"
+					}
+				}
+			],
+			"sid": 695078010937093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 550956901335492,
+					"parameters": {
+						"object": "btnJugar"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 284778990188124
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnJugar",
+					"sid": 545800048968364,
+					"parameters": {
+						"width": "btnJugar.Width * 1.10",
+						"height": "btnJugar.Height * 1.10"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtJugar",
+					"sid": 367734985230077,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 939679694165800
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 159935675495971,
+					"parameters": {
+						"object": "btnJugar"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnJugar",
+					"sid": 656597090278755,
+					"parameters": {
+						"width": "224",
+						"height": "87"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtJugar",
+					"sid": 113860212328007,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 821810057246584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 396008323477215,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnJugar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 129528455382223,
+					"parameters": {
+						"layout": "Prólogo"
+					}
+				}
+			],
+			"sid": 866862848221981
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 273053716606762,
+					"parameters": {
+						"object": "btnOpciones"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 555182147131005
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnOpciones",
+					"sid": 148778436077196,
+					"parameters": {
+						"width": "btnOpciones.Width * 1.10",
+						"height": "btnOpciones.Height * 1.10"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtOpciones",
+					"sid": 400697702766559,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 321065534202848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 441928333826110,
+					"parameters": {
+						"object": "btnOpciones"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnOpciones",
+					"sid": 629173181743901,
+					"parameters": {
+						"width": "224",
+						"height": "87"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtOpciones",
+					"sid": 724538113254897,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 668412807382914
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 311814485508795,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnOpciones"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PanelOpciones",
+					"sid": 527522715784495,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "PanelOpciones",
+					"sid": 146977643867298,
+					"parameters": {
+						"x": "242",
+						"y": "445"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PanelOpciones",
+					"sid": 257110096888237,
+					"parameters": {
+						"opacity": "25"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 483070696902179,
+					"parameters": {
+						"layer": "\"General\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 910409046654613,
+					"parameters": {
+						"layer": "\"General\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 266088733226679,
+					"parameters": {
+						"layer": "\"PDO\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 815524416047795,
+					"parameters": {
+						"seconds": "0.2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 978621450513821,
+					"parameters": {
+						"layer": "\"PDO\"",
+						"interactive": true
+					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 861650840575784,
+					"parameters": {
+						"variable": "PopUpActivo"
+					}
+				}
+			],
+			"sid": 396221300416487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 788807304800289,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnGranjero"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "btnCazatormentas",
+					"sid": 482839472423930,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnGranjero",
+					"sid": 136565010863525,
+					"parameters": {
+						"color": "rgbEx(50, 205, 50)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnPsicópata",
+					"sid": 835201584774573,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 474734331311896,
+					"parameters": {
+						"variable": "Dificultad",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 146109050842879
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 204296480994578,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnCazatormentas"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "btnCazatormentas",
+					"sid": 233755962015130,
+					"parameters": {
+						"color": "rgbEx(50, 205, 50)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnGranjero",
+					"sid": 539046425443361,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnPsicópata",
+					"sid": 880554139240489,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 730774528701520,
+					"parameters": {
+						"variable": "Dificultad",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 835877930086545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 285314496825099,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnPsicópata"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "btnCazatormentas",
+					"sid": 981163788383078,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnGranjero",
+					"sid": 261804199089878,
+					"parameters": {
+						"color": "rgbEx(180, 180, 180)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "btnPsicópata",
+					"sid": 591942993179875,
+					"parameters": {
+						"color": "rgbEx(50, 205, 50)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 178601533476786,
+					"parameters": {
+						"variable": "Dificultad",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 926565782283196
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 175801207404963,
+					"parameters": {
+						"object": "btnGranjero"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 355715358938123
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnGranjero",
+					"sid": 966055698696651,
+					"parameters": {
+						"width": "btnGranjero.Width * 1.10",
+						"height": "btnGranjero.Height * 1.10"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtGranjero",
+					"sid": 975638805988921,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 896072951056150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 716384949547641,
+					"parameters": {
+						"object": "btnGranjero"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnGranjero",
+					"sid": 142134943858351,
+					"parameters": {
+						"width": "224",
+						"height": "87"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtGranjero",
+					"sid": 875541367292165,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 360783975156095
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 214590805578150,
+					"parameters": {
+						"object": "btnCazatormentas"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 646853086555485
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnCazatormentas",
+					"sid": 231670734959152,
+					"parameters": {
+						"width": "btnCazatormentas.Width * 1.10",
+						"height": "btnCazatormentas.Height * 1.10"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtCazatormentas",
+					"sid": 379962369763747,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 226390136656767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 391419974930465,
+					"parameters": {
+						"object": "btnCazatormentas"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnCazatormentas",
+					"sid": 576387918547954,
+					"parameters": {
+						"width": "224",
+						"height": "87"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtCazatormentas",
+					"sid": 549483257758786,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 137292786263758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 289198414987137,
+					"parameters": {
+						"object": "btnPsicópata"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 468076306618625
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnPsicópata",
+					"sid": 471369313975897,
+					"parameters": {
+						"width": "btnPsicópata.Width * 1.10",
+						"height": "btnPsicópata.Height * 1.10"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtPsicópata",
+					"sid": 196007489575828,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 144541606646489
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 169099181662337,
+					"parameters": {
+						"object": "btnPsicópata"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnPsicópata",
+					"sid": 302522754281428,
+					"parameters": {
+						"width": "224",
+						"height": "87"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtPsicópata",
+					"sid": 717366552111423,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 674330075147554
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 454459093762649,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnVolver"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 642686557958029,
+					"parameters": {
+						"variable": "PopUpActivo"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 901192332797676,
+					"parameters": {
+						"layer": "\"PDO\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 499689850382566,
+					"parameters": {
+						"layer": "\"PDO\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 832453955753332,
+					"parameters": {
+						"layer": "\"General\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 624553488899359,
+					"parameters": {
+						"seconds": "0.2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 202429892208577,
+					"parameters": {
+						"layer": "\"General\"",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 279326438438216
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 967864216509690,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Musica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 455371154386392,
+					"parameters": {
+						"variable": "MusicaOnOff"
+					}
+				}
+			],
+			"sid": 865733532394501
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 127636375050685,
+					"parameters": {
+						"variable": "MusicaOnOff"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Musica",
+					"sid": 159281962641680,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-muted",
+					"objectClass": "SonidoExplosion",
+					"sid": 880720044345676,
+					"parameters": {
+						"tag": "\"mm\"",
+						"state": "unmuted"
+					}
+				}
+			],
+			"sid": 300639997568662
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 843193563816185,
+					"parameters": {
+						"variable": "MusicaOnOff"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Musica",
+					"sid": 887584234355951,
+					"parameters": {
+						"opacity": "50"
+					}
+				},
+				{
+					"id": "set-muted",
+					"objectClass": "SonidoExplosion",
+					"sid": 824393873321577,
+					"parameters": {
+						"tag": "\"mm\"",
+						"state": "muted"
+					}
+				}
+			],
+			"sid": 944615912175563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 114379867678712,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnAyuda"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 377824262852596,
+					"parameters": {
+						"layer": "\"Ayuda\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 163701942917629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 168542767345740,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnAtras"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 899869865726617,
+					"parameters": {
+						"layer": "\"Ayuda\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 448683243070338
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 882723336798872,
+					"parameters": {
+						"object": "btnAyuda"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 382554424451203
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnAyuda",
+					"sid": 140823310009516,
+					"parameters": {
+						"width": "btnJugar.Width * 1.10",
+						"height": "btnJugar.Height * 1.10"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtAyuda",
+					"sid": 110897811241364,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 242001660124025
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 308293117517864,
+					"parameters": {
+						"object": "btnAyuda"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnAyuda",
+					"sid": 929236449864186,
+					"parameters": {
+						"width": "224",
+						"height": "87"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtAyuda",
+					"sid": 398903385175267,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 933211985304567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 289732432156760,
+					"parameters": {
+						"object": "btnAtras"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 639377673716540
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "txtAtras",
+					"sid": 511305054079645,
+					"parameters": {
+						"size-pt": "20"
+					}
+				}
+			],
+			"sid": 182186064729586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 349668251421846,
+					"parameters": {
+						"object": "btnAtras"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnAtras",
+					"sid": 949340248618124,
+					"parameters": {
+						"width": "187",
+						"height": "45"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtAtras",
+					"sid": 792601623626303,
+					"parameters": {
+						"size-pt": "15"
+					}
+				}
+			],
+			"sid": 509558879181054
+		}
+	],
+	"sid": 467152691669207
+}

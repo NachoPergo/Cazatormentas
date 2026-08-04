@@ -1,0 +1,52 @@
+{
+	"name": "cinNOPerro",
+	"plugin-id": "Sprite",
+	"sid": 968040688312490,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1674,
+						"height": 473,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6376369,
+						"collisionPoly": {
+							"points": [
+								0.0005973715651135006,
+								0.0021141649048625794,
+								0.9994026284348865,
+								0.0021141649048625794,
+								0.9994026284348865,
+								0.9978858350951374,
+								0.0005973715651135006,
+								0.9978858350951374
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 872935468012438,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

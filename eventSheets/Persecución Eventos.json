@@ -1,0 +1,1140 @@
+{
+	"name": "Persecución Eventos",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "JuegoPausado",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 812356710950124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 149845220522449
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 847351454742146,
+					"parameters": {
+						"variable": "JuegoPausado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 437778851040315,
+					"parameters": {
+						"x": "242",
+						"y": "431.5"
+					}
+				},
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 616833288608815,
+					"parameters": {
+						"width": "489",
+						"height": "879"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 428747962340108,
+					"parameters": {
+						"text": "\"3\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Contador",
+					"sid": 588992174572855,
+					"parameters": {
+						"x": "137",
+						"y": "343"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 245976529086427,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 973019705152923,
+					"parameters": {
+						"text": "\"2\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 925247693279942,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 729870120133317,
+					"parameters": {
+						"text": "\"1\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 528573369476439,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Contador",
+					"sid": 486769831633597,
+					"parameters": {
+						"x": "694",
+						"y": "163"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 413430313280002,
+					"parameters": {
+						"variable": "JuegoPausado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 646795798424047,
+					"parameters": {
+						"audio-file": {
+							"path": "freesound_community-tornado-sound-better-quality-68141"
+						},
+						"loop": "looping",
+						"volume": "-15",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 627056554517259,
+					"parameters": {
+						"audio-file": {
+							"path": "freesound_community-julyadrianthunder-75683"
+						},
+						"loop": "looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 456322222733977,
+					"parameters": {
+						"audio-file": {
+							"path": "montogoronto-short-percussive-orchestral-tension-v02-481586"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"mj\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 295942807120353,
+					"parameters": {
+						"audio-file": {
+							"path": "freesound_community-big-thunder-clap-99753"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 765738419575737
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 764206715097774,
+					"parameters": {
+						"variable": "Dificultad",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Tornado",
+					"sid": 298625910674025,
+					"parameters": {
+						"instance-variable": "RadioY",
+						"value": "60"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "TroncoF",
+					"sid": 647686921143442,
+					"behaviorType": "Bala",
+					"parameters": {
+						"speed": "300"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto",
+					"sid": 559704824905377,
+					"parameters": {
+						"text": "\"1\""
+					}
+				}
+			],
+			"sid": 127636800868291
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 279534223645683,
+					"parameters": {
+						"variable": "Dificultad",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto",
+					"sid": 281464493428663,
+					"parameters": {
+						"text": "\"2\""
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Tornado",
+					"sid": 314955288424047,
+					"parameters": {
+						"angle": "0.8"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Tornado",
+					"sid": 391368566005119,
+					"parameters": {
+						"instance-variable": "RadioY",
+						"value": "120"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "TroncoF",
+					"sid": 341713475151268,
+					"behaviorType": "Bala",
+					"parameters": {
+						"speed": "500"
+					}
+				}
+			],
+			"sid": 936297129785524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 993299802661910,
+					"parameters": {
+						"variable": "Dificultad",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto",
+					"sid": 302775331946266,
+					"parameters": {
+						"text": "\"3\""
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Tornado",
+					"sid": 485733285224571,
+					"parameters": {
+						"angle": "1.2"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Tornado",
+					"sid": 729125042387457,
+					"parameters": {
+						"instance-variable": "RadioY",
+						"value": "175"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "TroncoF",
+					"sid": 863958649499636,
+					"behaviorType": "Bala",
+					"parameters": {
+						"speed": "700"
+					}
+				}
+			],
+			"sid": 816019676494381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 561399605873497,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 503074026032084
+				}
+			],
+			"sid": 544632304742919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 769633177343762
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 331181462032157,
+					"parameters": {
+						"variable": "JuegoPausado"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Tornado",
+					"sid": 159029292906672,
+					"parameters": {
+						"instance-variable": "angulo",
+						"value": "0.6"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Tornado",
+					"sid": 133250215982906,
+					"parameters": {
+						"x": "243 + cos(Tornado.angulo) * Tornado.RadioX"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Tornado",
+					"sid": 851556659490525,
+					"parameters": {
+						"y": "211 + sin(Tornado.angulo) * Tornado.radioY"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraInvestigación",
+					"sid": 248130761832798,
+					"parameters": {
+						"value": "BarraInvestigación.Puntaje"
+					}
+				}
+			],
+			"sid": 382773373827744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 209485171057979,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "BarraInvestigación",
+					"sid": 859235301761932,
+					"parameters": {
+						"instance-variable": "Puntaje",
+						"value": "max(1, int(20 - (distance(Auto.X, Auto.Y, Tornado.X, Tornado.Y) / 15)))"
+					}
+				}
+			],
+			"sid": 303363835902754
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 404194566028969,
+					"parameters": {
+						"interval-seconds": "3.5"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 753495028609583,
+					"parameters": {
+						"variable": "JuegoPausado"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 540643681222297,
+					"parameters": {
+						"object-to-create": "TroncoF",
+						"layer": "0",
+						"x": "Tornado.X",
+						"y": "Tornado.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "TroncoF",
+					"sid": 432806086497154,
+					"behaviorType": "Bala",
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 193176987650598
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 492335681449504,
+					"parameters": {
+						"interval-seconds": "7"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 102564749010888,
+					"parameters": {
+						"variable": "JuegoPausado"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 420110130253930,
+					"parameters": {
+						"object-to-create": "PuntosF",
+						"layer": "0",
+						"x": "Tornado.X",
+						"y": "Tornado.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "PuntosF",
+					"sid": 834523488183290,
+					"behaviorType": "Bala",
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 240644598824285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Auto",
+					"sid": 152468612057351,
+					"parameters": {
+						"object": "TroncoF"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 794931045920891,
+					"parameters": {
+						"audio-file": {
+							"path": "dragon-studio-explosion-effect-494317"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"exp\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Auto",
+					"sid": 879796948683163
+				},
+				{
+					"id": "destroy",
+					"objectClass": "TroncoF",
+					"sid": 650663390623120
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BarraInvestigación",
+					"sid": 377012361878523,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TxtDestruido",
+					"sid": 358688518076845,
+					"parameters": {
+						"x": "72",
+						"y": "362"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 275241495981289,
+					"parameters": {
+						"object-to-create": "Explosion",
+						"layer": "0",
+						"x": "Auto.X",
+						"y": "Auto.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 315320710555985,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Explosion",
+					"sid": 620449956040011
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 270998609307850,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 625911481023908
+				}
+			],
+			"sid": 899185724021332
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Auto",
+					"sid": 943243874360540,
+					"parameters": {
+						"object": "Tornado"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 945212032134863,
+					"parameters": {
+						"audio-file": {
+							"path": "dragon-studio-explosion-effect-494317"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"exp\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Auto",
+					"sid": 438273457288466
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BarraInvestigación",
+					"sid": 760164106892236,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TxtDestruido",
+					"sid": 307555437297071,
+					"parameters": {
+						"x": "72",
+						"y": "362"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 373276174976952,
+					"parameters": {
+						"object-to-create": "Explosion",
+						"layer": "0",
+						"x": "Auto.X",
+						"y": "Auto.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 984096159051354,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Explosion",
+					"sid": 404567102824102
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 990440060354539,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 460249106974124
+				}
+			],
+			"sid": 115018651430841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "TroncoF",
+					"sid": 860601667685468
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "TroncoF",
+					"sid": 956622954988068
+				}
+			],
+			"sid": 870322897223718
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "BarraInvestigación",
+					"sid": 271945717819686,
+					"parameters": {
+						"instance-variable": "Puntaje",
+						"comparison": 5,
+						"value": "150"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 439489629813138,
+					"parameters": {
+						"variable": "JuegoPausado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "SonidoExplosion",
+					"sid": 467230505543400
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 881629234642490,
+					"parameters": {
+						"layout": "Cinemática"
+					}
+				}
+			],
+			"sid": 953354186040813
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "PuntosF",
+					"sid": 598892353147187
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PuntosF",
+					"sid": 416725790243014
+				}
+			],
+			"sid": 307551436361873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Auto",
+					"sid": 185599685113770,
+					"parameters": {
+						"object": "PuntosF"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "BarraInvestigación",
+					"sid": 753950223029270,
+					"parameters": {
+						"instance-variable": "Puntaje",
+						"value": "10"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PuntosF",
+					"sid": 460787038405630
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 874147857091014,
+					"parameters": {
+						"audio-file": {
+							"path": "spinopel-break-a-clay-pot-456377"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 408460631833050
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 356320216250337,
+					"parameters": {
+						"variable": "MusicaOnOff"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-muted",
+					"objectClass": "SonidoExplosion",
+					"sid": 815063750900438,
+					"parameters": {
+						"tag": "\"mj\"",
+						"state": "unmuted"
+					}
+				}
+			],
+			"sid": 845152604838046
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 557149955822476,
+					"parameters": {
+						"variable": "MusicaOnOff"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-muted",
+					"objectClass": "SonidoExplosion",
+					"sid": 522429237214278,
+					"parameters": {
+						"tag": "\"mj\"",
+						"state": "muted"
+					}
+				}
+			],
+			"sid": 757311216439765
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 546541771523557,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 390052484292821,
+					"parameters": {
+						"variable": "JuegoPausado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 297944646544119,
+					"parameters": {
+						"layer": "\"Pausa\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 140420901060640
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 330484632779815,
+					"parameters": {
+						"variable": "JuegoPausado"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 461477541444050,
+					"parameters": {
+						"time-scale": "0"
+					}
+				}
+			],
+			"sid": 177323955943733
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 260695846185414,
+					"parameters": {
+						"variable": "JuegoPausado"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 559965440314766,
+					"parameters": {
+						"time-scale": "1"
+					}
+				}
+			],
+			"sid": 385461083899890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 645249680286681,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnReanudar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 882503199039700,
+					"parameters": {
+						"text": "\"3\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Contador",
+					"sid": 562977680308060,
+					"parameters": {
+						"x": "137",
+						"y": "343"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 437566118852989,
+					"parameters": {
+						"layer": "\"Pausa\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 916851156852172,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 691765398405293,
+					"parameters": {
+						"text": "\"2\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 459279369953496,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 524288853921209,
+					"parameters": {
+						"text": "\"1\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 577507209231901,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Contador",
+					"sid": 861681208221950,
+					"parameters": {
+						"x": "694",
+						"y": "163"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 415556118339374,
+					"parameters": {
+						"variable": "JuegoPausado",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 157334790725363
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 710592297432756,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "btnVolverMenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "SonidoExplosion",
+					"sid": 390746026621133
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 799059842972440,
+					"parameters": {
+						"variable": "JuegoPausado",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 512037012274133,
+					"parameters": {
+						"time-scale": "1.0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 140953097913087,
+					"parameters": {
+						"layer": "\"Pausa\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 292303923812904,
+					"parameters": {
+						"layout": "Menú"
+					}
+				}
+			],
+			"sid": 357604958035729
+		}
+	],
+	"sid": 940107578021578
+}

@@ -1,0 +1,642 @@
+{
+	"name": "Prologo  Eventos",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 587491279292191
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 504463278027144,
+					"parameters": {
+						"width": "1565 ",
+						"height": "1084"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtPrologo",
+					"sid": 268434329432499,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 471232380029407,
+					"parameters": {
+						"text": "\"Algunos nos llaman locos.. que disfrutamos con el caos y la destrucción.\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 204332572942063,
+					"parameters": {
+						"audio-file": {
+							"path": "ost"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"ost\""
+					}
+				}
+			],
+			"sid": 753269625849509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 644121667956520,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "CinPro1",
+					"sid": 580596660574751,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 521584708393764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 889702095170123,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 954748678401785,
+					"parameters": {
+						"text": "\"La realidad es que no podría estar más lejos de eso..\""
+					}
+				}
+			],
+			"sid": 397529011884397
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 129337785862246,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "recuerdoprologo",
+					"sid": 449086275464019,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 566057627982494,
+					"parameters": {
+						"text": "\"Si es cierto que es un espectáculo visual impactante, y a veces emocionante, pero...\""
+					}
+				}
+			],
+			"sid": 334355579035022
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 807311846418998,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 365394957979560,
+					"parameters": {
+						"text": "\"siempre trae consecuencias...\""
+					}
+				}
+			],
+			"sid": 665518308095517
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 146486452647748,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegroprologo",
+					"sid": 791853615852693,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "recuerdoprologo",
+					"sid": 429102996302172,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtPrologo",
+					"sid": 508093782793359,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Noticias",
+					"sid": 925204463941455,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 378361347963611
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 168131759667490,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Noticias",
+					"sid": 623053437411379,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CinPro3",
+					"sid": 911804853729530,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 558577834716725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 357726530821477,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "txtPrologo",
+					"sid": 469247853957179,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CinPro3",
+					"sid": 580725423610224,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CinPro1",
+					"sid": 838706953210341,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 954584947618060,
+					"parameters": {
+						"text": "\"Hace tiempo que juramos encontrar la forma de detener esto\""
+					}
+				}
+			],
+			"sid": 599063941502345
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 677654509642712,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 110897818454860,
+					"parameters": {
+						"text": "\"Pero nunca creí que tendría que hacerlo solo\""
+					}
+				}
+			],
+			"sid": 238840295299273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 633966916524615,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 630619654863505,
+					"parameters": {
+						"text": "\"Aún así, debo hacerlo.\""
+					}
+				}
+			],
+			"sid": 645675171149010
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 295968306974968,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 110051296841717,
+					"parameters": {
+						"text": "\"Por ti.\""
+					}
+				}
+			],
+			"sid": 872773106977380
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 456712367566247,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "10"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 624034561723362
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 601741353087366,
+					"parameters": {
+						"audio-file": {
+							"path": "freesound_community-big-thunder-clap-99753"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"logo\""
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CinPro1",
+					"sid": 451598621641565,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegroprologo",
+					"sid": 797216043122751,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Logo",
+					"sid": 167484591541042,
+					"parameters": {
+						"x": "840",
+						"y": "547"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 203415085601716,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-muted",
+					"objectClass": "SonidoExplosion",
+					"sid": 450461317935579,
+					"parameters": {
+						"tag": "\"ost\"",
+						"state": "muted"
+					}
+				}
+			],
+			"sid": 716192825852960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 560613888894018,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "11"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 587495012249691
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegroprologo",
+					"sid": 481693106746454,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 717237867428142,
+					"parameters": {
+						"text": "\"-Tornado Alley- es la denominación que se le da al área de Estados Unidos donde más tornados se producen en el mundo.\""
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "CinPro2",
+					"sid": 792226392204602,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Logo",
+					"sid": 228626101260945,
+					"parameters": {
+						"x": "525",
+						"y": "1585"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "SonidoExplosion",
+					"sid": 923763925712775,
+					"parameters": {
+						"tag": "\"logo\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "SonidoExplosion",
+					"sid": 734680851868555,
+					"parameters": {
+						"audio-file": {
+							"path": "ost"
+						},
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"ost\""
+					}
+				}
+			],
+			"sid": 446179691310937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 206177066412820,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "12"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 163845210022529,
+					"parameters": {
+						"text": "\"-Joel es un experimentado caza tormentas, que como muchos otros en su rubro, busca prevenir las catástrofes que ocasionan estos fenómenos-\""
+					}
+				}
+			],
+			"sid": 534210457810606
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 436606570820629,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "13"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 701954478541903,
+					"parameters": {
+						"text": "\"Joel: A la distancia parece un categoría 4, pero en poco tiempo seguramente evolucione a categoría 5.\""
+					}
+				}
+			],
+			"sid": 621548246951764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "CinPro1",
+					"sid": 721431037112221,
+					"parameters": {
+						"instance-variable": "PrologoPag1",
+						"comparison": 0,
+						"value": "14"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPrologo",
+					"sid": 578229697176424,
+					"parameters": {
+						"text": "\"Joel: Debo apresurarme si pretendo tomar buenas muestras sobre este.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 991391437171003,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "SonidoExplosion",
+					"sid": 542559527375970,
+					"parameters": {
+						"tag": "\"ost\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 374590276982852,
+					"parameters": {
+						"layout": "Persecución"
+					}
+				}
+			],
+			"sid": 208417108634093
+		}
+	],
+	"sid": 181977605393522
+}

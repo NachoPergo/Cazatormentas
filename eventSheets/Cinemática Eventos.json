@@ -1,0 +1,1189 @@
+{
+	"name": "Cinemática Eventos",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SeguirRuido",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 226525320947045
+		},
+		{
+			"eventType": "variable",
+			"name": "Decisión",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 153007370135794
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 446867090605377
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 258532895656486,
+					"parameters": {
+						"width": "1565 ",
+						"height": "1084"
+					}
+				}
+			],
+			"sid": 575586319293601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 175263202446728,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 713118011984234,
+					"parameters": {
+						"variable": "Decisión"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TxtCinem",
+					"sid": 270816879110107,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "FondoCin1",
+					"sid": 332400553831892,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 509967597603132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 586692467107922,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 758166690951729,
+					"parameters": {
+						"text": "\"Otra de las grandes... ya van al menos siete en el último mes...\""
+					}
+				}
+			],
+			"sid": 482835641453064
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 969593103721299,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 843819535938444,
+					"parameters": {
+						"text": "\"Ya tengo lo que necesito, pero me preocupa que se acerque mucho al pueblo...\""
+					}
+				}
+			],
+			"sid": 904825842009276
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 221183718624861,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 319814671013546,
+					"parameters": {
+						"text": "\"Si los datos son correctos en menos de una semana tendremos una mucho más grande...\""
+					}
+				}
+			],
+			"sid": 622025629853888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 456053184217443,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 984001324926172,
+					"parameters": {
+						"text": "\"Continuaré siguiendo la tormenta por si alguien necesita ayuda, debería cesar pronto...\""
+					}
+				}
+			],
+			"sid": 939557006042094
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 781554181287002,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 893351771141758,
+					"parameters": {
+						"text": "\"-Sube el volumen de la radio y continúa persiguiendo la tormenta pero con más cautela-\""
+					}
+				}
+			],
+			"sid": 316063145667286
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 644719651060506,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "FondoCin1",
+					"sid": 214867119567595,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegro",
+					"sid": 488235202949887,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 993526618889384,
+					"parameters": {
+						"text": "\"-Sube el volumen de la radio y continúa persiguiendo la tormenta pero con más cautela-\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 130197653589040,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				}
+			],
+			"sid": 387658683777929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 993647216311085,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 920609990002990,
+					"parameters": {
+						"text": "\"La tormenta cesa luego de unos minutos\""
+					}
+				}
+			],
+			"sid": 322409638172621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 713334883798561,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 415471117664434,
+					"parameters": {
+						"text": "\"Joel se desvía del camino principal hacia un pequeño pueblito\""
+					}
+				}
+			],
+			"sid": 962929569406315
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 538991657028120,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 435072469226051,
+					"parameters": {
+						"text": "\"-Al entrar al pueblo se observa claramente como la tormenta estuvo presente.. los caminos están repletos de ramas caídas, los árboles caídos y una sensación de tristeza desoladora-\""
+					}
+				}
+			],
+			"sid": 627463352971344
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 425117875650085,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegro",
+					"sid": 157995135910077,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "FondoCin2",
+					"sid": 519659358733389,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 251128026021430
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 977224136479412,
+					"parameters": {
+						"text": "\"-El auto se detiene frente a una casa destruida-\""
+					}
+				}
+			],
+			"sid": 847375898318745
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 394567021857124,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 834694174855022
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 455768609150860,
+					"parameters": {
+						"text": "\"Hola? Hay alguien aquí?\""
+					}
+				}
+			],
+			"sid": 443309202571681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 610767892779769,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "12"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 294853197907956
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 427392005085293,
+					"parameters": {
+						"text": "\"-Solo se oye el sonido de las gotas de agua caer sobre lo que queda de una mesa de madera-\""
+					}
+				}
+			],
+			"sid": 396415789850017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 604508487772099,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "13"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 662662183791484
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 163904458755996,
+					"parameters": {
+						"text": "\"Parece que no hay nadie aquí, debería revisar las otras casas por si alguien necesita ayuda\""
+					}
+				}
+			],
+			"sid": 568033289076648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 743843904360326,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "14"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 685296267887679
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 778057870557350,
+					"parameters": {
+						"text": "\"-En el instante en que Joel se acerca a la puerta parece escucharse algunos escombros caer en una habitación de la casa-\""
+					}
+				}
+			],
+			"sid": 294780190438828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 238156814357513,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 404982875020688
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "TxtCinem",
+					"sid": 961981572980080,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtOp1",
+					"sid": 194157494517584,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtOp2",
+					"sid": 408512861172673,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 362170300456783,
+					"parameters": {
+						"variable": "Decisión",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 406806852874498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 169324860774448,
+					"parameters": {
+						"object": "btnAtras"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnAtras",
+					"sid": 620390651907470,
+					"parameters": {
+						"width": "187",
+						"height": "45"
+					}
+				},
+				{
+					"id": "set-font-size",
+					"objectClass": "txtAtras",
+					"sid": 178118940221452,
+					"parameters": {
+						"size-pt": "15"
+					}
+				}
+			],
+			"sid": 577505483360088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 445151165659769,
+					"parameters": {
+						"object": "txtOp1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 882433958455301
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "txtOp1",
+					"sid": 945454947220399,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 594718123992953
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 849917468329950,
+					"parameters": {
+						"object": "txtOp1"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "txtOp1",
+					"sid": 625473417859895,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 810521674397436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 473750065116767,
+					"parameters": {
+						"object": "txtOp2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 994336494723466
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "txtOp2",
+					"sid": 355145989428588,
+					"parameters": {
+						"size-pt": "30"
+					}
+				}
+			],
+			"sid": 895541839108540
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 518079226821857,
+					"parameters": {
+						"object": "txtOp2"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-size",
+					"objectClass": "txtOp2",
+					"sid": 328676525000593,
+					"parameters": {
+						"size-pt": "25"
+					}
+				}
+			],
+			"sid": 987524343979613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 749831565228861,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "txtOp1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 354642544910027,
+					"parameters": {
+						"variable": "SeguirRuido",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtOp1",
+					"sid": 142816653885737,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtOp2",
+					"sid": 455429173900564,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 665907518024752,
+					"parameters": {
+						"variable": "Decisión",
+						"value": "false"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "FondoCin1",
+					"sid": 272173302606565,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 482400401847603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 282413118022097,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "txtOp2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 714419379165942,
+					"parameters": {
+						"variable": "SeguirRuido",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtOp1",
+					"sid": 913254187540769,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "txtOp2",
+					"sid": 947426647892799,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 861721542724698,
+					"parameters": {
+						"variable": "Decisión",
+						"value": "false"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "FondoCin1",
+					"sid": 682547112049353,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 973627909353138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 323838170435821,
+					"parameters": {
+						"variable": "SeguirRuido"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 968328730490047,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "16"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "TxtCinem",
+					"sid": 344203703347949,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 219651557679252,
+					"parameters": {
+						"text": "\"Un perro! Que suerte que decidí entrar a esta casa.. Ven conmigo chiquito\""
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Perrito",
+					"sid": 510866480726783,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "FondoCin2",
+					"sid": 636855787998065,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 641315159245247
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 636298630927610,
+					"parameters": {
+						"variable": "SeguirRuido"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 926296207257595,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "17"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 751429191899183
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TxtCinem",
+					"sid": 415209680757301,
+					"parameters": {
+						"x": "250",
+						"y": "375"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "cinNOPerro",
+					"sid": 773139889446262
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cinPerro",
+					"sid": 591532758049587,
+					"parameters": {
+						"x": "764",
+						"y": "241"
+					}
+				},
+				{
+					"id": "move-to-bottom",
+					"objectClass": "fondoNegro",
+					"sid": 187296685667734
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegro",
+					"sid": 247579733597120,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 689890975821980,
+					"parameters": {
+						"text": "\"-El perro sigue a Joel hasta el auto y se une al viaje-\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "finDemo",
+					"sid": 929236918777716
+				},
+				{
+					"id": "set-position",
+					"objectClass": "finDemo",
+					"sid": 887417080197675,
+					"parameters": {
+						"x": "332",
+						"y": "767"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Perrito",
+					"sid": 444162875018888,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 294560015807324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 359663781002433,
+					"parameters": {
+						"variable": "SeguirRuido"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 935659029722575,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "16"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "TxtCinem",
+					"sid": 121510352102012,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "TxtCinem",
+					"sid": 165449507224956
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtCinem",
+					"sid": 189031720854206,
+					"parameters": {
+						"text": "\"-Joel se da media vuelta, sube al auto y continúa su camino-!\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TxtCinem",
+					"sid": 370863892140177,
+					"parameters": {
+						"x": "250",
+						"y": "400"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "FondoCin2",
+					"sid": 505789274261695,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cinNOPerro",
+					"sid": 709151994328427,
+					"parameters": {
+						"x": "764",
+						"y": "241"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegro",
+					"sid": 483897099642428,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "move-to-bottom",
+					"objectClass": "fondoNegro",
+					"sid": 726852230623816
+				}
+			],
+			"sid": 781194122718281
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 554922815525326,
+					"parameters": {
+						"variable": "SeguirRuido"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 555826513532571,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "17"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "TxtCinem",
+					"sid": 850169966827704,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "cinNOPerro",
+					"sid": 811864772480193
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cinNOPerro",
+					"sid": 380101898995421,
+					"parameters": {
+						"x": "764",
+						"y": "241"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "fondoNegro",
+					"sid": 681718755286954,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "finDemo",
+					"sid": 342717748934503
+				},
+				{
+					"id": "set-position",
+					"objectClass": "finDemo",
+					"sid": 342356374199045,
+					"parameters": {
+						"x": "332",
+						"y": "767"
+					}
+				}
+			],
+			"sid": 990349785336701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "FondoCin1",
+					"sid": 588192653396124,
+					"parameters": {
+						"instance-variable": "TextoPagina",
+						"comparison": 0,
+						"value": "18"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 440802982183331,
+					"parameters": {
+						"width": "500",
+						"height": "910"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 809581868040900,
+					"parameters": {
+						"layout": "Menú"
+					}
+				}
+			],
+			"sid": 263815349630537
+		}
+	],
+	"sid": 832509078452080
+}

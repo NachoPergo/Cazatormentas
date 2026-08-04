@@ -1,0 +1,60 @@
+{
+	"name": "btnVolver",
+	"plugin-id": "Sprite",
+	"sid": 637055727293094,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 514,
+						"height": 474,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3954250,
+						"collisionPoly": {
+							"points": [
+								0.3424124513618677,
+								0.002109704641350211,
+								0.857976653696498,
+								0.18354430379746836,
+								0.9980544747081712,
+								0.3881856540084388,
+								0.9980544747081712,
+								0.7742616033755274,
+								0.9669260700389105,
+								0.8755274261603375,
+								0.7821011673151751,
+								0.9978902953586498,
+								0.23540856031128404,
+								0.9472573839662447,
+								0.017509727626459144,
+								0.229957805907173
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 939861942233696,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
