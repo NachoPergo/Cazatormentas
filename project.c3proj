@@ -1,0 +1,414 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 49500,
+	"name": "Cazatormentas",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Fuente Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Entrada de texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Barra de progreso",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bala",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direcciones",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Desvanecer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restringido a",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "uy87oj2tv17",
+	"objectTypes": {
+		"items": [
+			"Teclado",
+			"Derrota",
+			"TxtDerrota",
+			"BarraInvestigación",
+			"TxtDestruido",
+			"Fondo",
+			"Mouse",
+			"TxtCinem",
+			"FondoCin2",
+			"fondoNegro",
+			"btnOpciones",
+			"txtOpciones",
+			"PanelOpciones",
+			"Maníaco",
+			"btnPsicópata",
+			"txtPsicópata",
+			"btnGranjero",
+			"txtGranjero",
+			"btnCazatormentas",
+			"txtCazatormentas",
+			"txtDificultad",
+			"btnJugar",
+			"txtJugar",
+			"FondoMenu",
+			"btnVolver",
+			"TroncoF",
+			"PuntosF",
+			"FondoCin1",
+			"Noticias",
+			"Explosion",
+			"SonidoExplosion",
+			"Texto",
+			"CinPro1",
+			"txtPrologo",
+			"CinPro2",
+			"CinPro3",
+			"fondoNegroprologo",
+			"recuerdoprologo",
+			"Logo",
+			"btnAyuda",
+			"Musica",
+			"fondoPausa",
+			"txtPausa",
+			"btnReanudar",
+			"btnVolverMenu",
+			"Contador",
+			"Reanudar",
+			"VolverAlMenú",
+			"txtAyuda",
+			"bannerAyuda",
+			"txtComoJugar",
+			"muestraQuimico",
+			"muestraFlechitas",
+			"txtAyuda1",
+			"txtAyuda2",
+			"txtAyuda3",
+			"btnAtras",
+			"txtAtras",
+			"Perrito",
+			"txtOp1",
+			"txtOp2",
+			"cinPerro",
+			"cinNOPerro",
+			"finDemo",
+			"Auto",
+			"Tornado"
+		],
+		"subfolders": []
+	},
+	"functionsName": "Funciones",
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Menú",
+			"Persecución",
+			"Cinemática",
+			"Prólogo"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Persecución Eventos",
+			"Cinemática Eventos",
+			"Menú - Eventos",
+			"Prologo  Eventos"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "dragon-studio-explosion-effect-494317.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 423397578541486,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "freesound_community-tornado-sound-better-quality-68141.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 307486223750705,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "freesound_community-julyadrianthunder-75683.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 598527974616235,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "montogoronto-short-percussive-orchestral-tension-v02-481586.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 219269587889146,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "spinopel-break-a-clay-pot-456377.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 706488858828278,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "freesound_community-big-thunder-clap-99753.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 919991607844999,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ost.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 975843909656847,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icono-16.png",
+					"type": "image/png",
+					"sid": 955408828506800,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-32.png",
+					"type": "image/png",
+					"sid": 905110097330838,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-64.png",
+					"type": "image/png",
+					"sid": 896527973267864,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-128.png",
+					"type": "image/png",
+					"sid": 983112686111683,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-256.png",
+					"type": "image/png",
+					"sid": 836914342182097,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-512.png",
+					"type": "image/png",
+					"sid": 758733828122903,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "logo-carga.png",
+					"type": "image/png",
+					"sid": 269865935279677,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Línea de tiempo 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Diagrama de flujo 1"
+		],
+		"subfolders": []
+	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "regular",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"multitexturing": "auto",
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"fixedFramerate": 30,
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"uidAllocationMode": "increment",
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"scriptsType": "module"
+	},
+	"viewportWidth": 480,
+	"viewportHeight": 854,
+	"firstLayout": "Menú"
+}

@@ -1,0 +1,7 @@
+Animación tornado
+Animación auto
+Dificultad impacta en el puntaje
+Zoom en las opciones (menú Pausa)
+Fondo en transición
+Efecto relámpago
+
