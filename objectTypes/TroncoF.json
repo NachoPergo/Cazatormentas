@@ -1,0 +1,66 @@
+{
+	"name": "TroncoF",
+	"plugin-id": "Sprite",
+	"sid": 330828310403611,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 742495081379521
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 867,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5493965,
+						"collisionPoly": {
+							"points": [
+								0.21107266435986158,
+								0.051181102362204724,
+								0.9273356401384083,
+								0.06692913385826772,
+								0.9688581314878892,
+								0.7165354330708661,
+								0.9388696655132641,
+								0.8976377952755905,
+								0.831603229527105,
+								1,
+								0.05074971164936563,
+								0.9645669291338582,
+								0.0392156862745098,
+								0.9212598425196851,
+								0.0726643598615917,
+								0.07086614173228346
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 541670964230088,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

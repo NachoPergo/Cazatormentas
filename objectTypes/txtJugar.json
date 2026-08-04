@@ -1,0 +1,10 @@
+{
+	"name": "txtJugar",
+	"plugin-id": "Text",
+	"sid": 631352126685920,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

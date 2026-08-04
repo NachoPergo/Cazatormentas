@@ -1,0 +1,56 @@
+{
+	"name": "PuntosF",
+	"plugin-id": "Sprite",
+	"sid": 947677982480680,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 783046603120564
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 217,
+						"height": 340,
+						"originX": 0.9032258064516129,
+						"originY": 0.5794117647058824,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6648436,
+						"collisionPoly": {
+							"points": [
+								0.7373271889400922,
+								0.04411764705882353,
+								0.8986175115207373,
+								0.961764705882353,
+								0.013824884792626729,
+								0.861764705882353
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 522233416631953,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

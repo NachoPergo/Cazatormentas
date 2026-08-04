@@ -1,0 +1,56 @@
+{
+	"name": "muestraFlechitas",
+	"plugin-id": "Sprite",
+	"sid": 857207326479770,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 476,
+						"height": 318,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4999611,
+						"collisionPoly": {
+							"points": [
+								0.3865546218487395,
+								0.012578616352201259,
+								0.6386554621848739,
+								0.031446540880503145,
+								0.9936974789915967,
+								0.5880503144654088,
+								0.9495798319327731,
+								0.9874213836477987,
+								0.0063025210084033615,
+								0.9150943396226415,
+								0.01680672268907563,
+								0.550314465408805
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 372989751963692,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

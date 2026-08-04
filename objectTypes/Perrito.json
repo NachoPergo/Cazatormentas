@@ -1,0 +1,52 @@
+{
+	"name": "Perrito",
+	"plugin-id": "Sprite",
+	"sid": 748554087943144,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1674,
+						"height": 943,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8077479,
+						"collisionPoly": {
+							"points": [
+								0.0005973715651135006,
+								0.0010604453870625664,
+								0.9994026284348865,
+								0.0010604453870625664,
+								0.9994026284348865,
+								0.9989395546129375,
+								0.0005973715651135006,
+								0.9989395546129375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 633719596954441,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

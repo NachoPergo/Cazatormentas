@@ -1,0 +1,10 @@
+{
+	"name": "txtOpciones",
+	"plugin-id": "Text",
+	"sid": 310323340490522,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

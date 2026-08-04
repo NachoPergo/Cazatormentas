@@ -1,0 +1,10 @@
+{
+	"name": "txtComoJugar",
+	"plugin-id": "Text",
+	"sid": 345606674045188,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

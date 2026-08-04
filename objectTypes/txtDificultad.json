@@ -1,0 +1,10 @@
+{
+	"name": "txtDificultad",
+	"plugin-id": "Text",
+	"sid": 163663006190476,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
